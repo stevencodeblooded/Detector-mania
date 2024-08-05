@@ -16,30 +16,33 @@ import { Link } from "react-router-dom";
 const SliderComponent = () => {
   const sliderRef = useRef(null);
   const settings = {
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      arrows: false,
-      responsive: [
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: false,
+    responsive: [
         {
-          breakpoint: 1280,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: true,
-          },
+            breakpoint: 1280,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+            },
         },
         {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                centerMode: false,  // Disable centering
+                centerPadding: '0px', // Disable padding on both sides
+                variableWidth: true, // Enable custom width
+            },
         },
-        
-      ],
-    };
+    ],
+};
 
   const next = () => {
     sliderRef.current.slickNext();
@@ -75,8 +78,8 @@ const SliderComponent = () => {
       </div>
       <Slider ref={sliderRef} {...settings} className="pt-12">
         {[1, 2, 3, 4, 5].map((item) => (
-          <div key={item} className="px-2 ">
-            <div className="bg-white rounded-xl cursor-pointer shadow-lg overflow-hidden border-4 border-emerald-300 hover:border-emerald-400 transition-all">
+          <div key={item} className="px-2" style={{ width: 'calc(100vw - 180px)' }}>
+            <div className="bg-white rounded-xl cursor-pointer shadow-lg border-4 border-emerald-300 hover:border-emerald-400 transition-all">
               <img
                 src={`https://via.placeholder.com/300x400?text=Image+${item}`}
                 alt={`Placeholder ${item}`}

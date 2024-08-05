@@ -5,7 +5,7 @@ const Products = () => {
   return (
     <div>
       <div key={item} className='grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-7'>
-        <div className="rounded-xl p-3 shadow-lg overflow-hidden cursor-pointer border-4 border-emerald-300 hover:border-emerald-400 transition-all">
+        <div className="rounded-xl p-3 shadow-lg cursor-pointer border-4 border-emerald-300 hover:border-emerald-400 transition-all">
           <Link to={'/details/12'}> 
             <img
               src={item}
@@ -21,13 +21,13 @@ const Products = () => {
                 <button className=" bg-emerald-500 text-sm md:text-base hover:bg-emerald-600 w-full text-white uppercase font-semibold py-2 px-4 rounded-xl transition-all">
                 Scheda Technica
                 </button>
-                <button className=" bg-emerald-900 text-sm md:text-base hover:bg-emerald-950 w-full text-white uppercase font-semibold py-2 px-4 rounded-xl transition-all">
+                <Link to={'/confronto'} className=" text-center bg-emerald-900 text-sm md:text-base hover:bg-emerald-950 w-full text-white uppercase font-semibold py-2 px-4 rounded-xl transition-all">
                 Compara
-                </button>
+                </Link>
             </div>
           </div>
         </div>
-        <div className="rounded-xl p-3 shadow-lg overflow-hidden cursor-pointer border-4 border-emerald-300 hover:border-emerald-400 transition-all">
+        <div className="rounded-xl p-3 shadow-lg cursor-pointer border-4 border-emerald-300 hover:border-emerald-400 transition-all">
           <Link to={'/details/12'}> 
             <img
               src={item}
@@ -43,13 +43,13 @@ const Products = () => {
                 <button className=" bg-emerald-500 text-sm md:text-base hover:bg-emerald-600 w-full text-white uppercase font-semibold py-2 px-4 rounded-xl transition-all">
                 Scheda Technica
                 </button>
-                <button className=" bg-emerald-900 text-sm md:text-base hover:bg-emerald-950 w-full text-white uppercase font-semibold py-2 px-4 rounded-xl transition-all">
+                <Link to={'/confronto'} className=" text-center bg-emerald-900 text-sm md:text-base hover:bg-emerald-950 w-full text-white uppercase font-semibold py-2 px-4 rounded-xl transition-all">
                 Compara
-                </button>
+                </Link>
             </div>
           </div>
         </div>
-        <div className="rounded-xl p-3 shadow-lg overflow-hidden cursor-pointer border-4 border-emerald-300 hover:border-emerald-400 transition-all">
+        <div className="rounded-xl p-3 shadow-lg cursor-pointer border-4 border-emerald-300 hover:border-emerald-400 transition-all">
           <Link to={'/details/12'}> 
             <img
               src={item}
@@ -65,13 +65,13 @@ const Products = () => {
                 <button className=" bg-emerald-500 text-sm md:text-base hover:bg-emerald-600 w-full text-white uppercase font-semibold py-2 px-4 rounded-xl transition-all">
                 Scheda Technica
                 </button>
-                <button className=" bg-emerald-900 text-sm md:text-base hover:bg-emerald-950 w-full text-white uppercase font-semibold py-2 px-4 rounded-xl transition-all">
+                <Link to={'/confronto'} className=" text-center bg-emerald-900 text-sm md:text-base hover:bg-emerald-950 w-full text-white uppercase font-semibold py-2 px-4 rounded-xl transition-all">
                 Compara
-                </button>
+                </Link>
             </div>
           </div>
         </div>
-        <div className="rounded-xl p-3 shadow-lg overflow-hidden cursor-pointer border-4 border-emerald-300 hover:border-emerald-400 transition-all">
+        <div className="rounded-xl p-3 shadow-lg cursor-pointer border-4 border-emerald-300 hover:border-emerald-400 transition-all">
           <Link to={'/details/12'}> 
             <img
               src={item}
@@ -87,13 +87,13 @@ const Products = () => {
                 <button className=" bg-emerald-500 text-sm md:text-base hover:bg-emerald-600 w-full text-white uppercase font-semibold py-2 px-4 rounded-xl transition-all">
                 Scheda Technica
                 </button>
-                <button className=" bg-emerald-900 text-sm md:text-base hover:bg-emerald-950 w-full text-white uppercase font-semibold py-2 px-4 rounded-xl transition-all">
+                <Link to={'/confronto'} className=" text-center bg-emerald-900 text-sm md:text-base hover:bg-emerald-950 w-full text-white uppercase font-semibold py-2 px-4 rounded-xl transition-all">
                 Compara
-                </button>
+                </Link>
             </div>
           </div>
         </div>
-        <div className="rounded-xl p-3 shadow-lg overflow-hidden cursor-pointer border-4 border-emerald-300 hover:border-emerald-400 transition-all">
+        <div className="rounded-xl p-3 shadow-lg cursor-pointer border-4 border-emerald-300 hover:border-emerald-400 transition-all">
           <Link to={'/details/12'}> 
             <img
               src={item}
@@ -109,13 +109,13 @@ const Products = () => {
                 <button className=" bg-emerald-500 text-sm md:text-base hover:bg-emerald-600 w-full text-white uppercase font-semibold py-2 px-4 rounded-xl transition-all">
                 Scheda Technica
                 </button>
-                <button className=" bg-emerald-900 text-sm md:text-base hover:bg-emerald-950 w-full text-white uppercase font-semibold py-2 px-4 rounded-xl transition-all">
+                <Link to={'/confronto'} className=" text-center bg-emerald-900 text-sm md:text-base hover:bg-emerald-950 w-full text-white uppercase font-semibold py-2 px-4 rounded-xl transition-all">
                 Compara
-                </button>
+                </Link>
             </div>
           </div>
         </div>
-        <div className="rounded-xl p-3 shadow-lg overflow-hidden cursor-pointer border-4 border-emerald-300 hover:border-emerald-400 transition-all">
+        <div className="rounded-xl p-3 shadow-lg cursor-pointer border-4 border-emerald-300 hover:border-emerald-400 transition-all">
           <Link to={'/details/12'}> 
             <img
               src={item}
@@ -131,13 +131,12 @@ const Products = () => {
                 <button className=" bg-emerald-500 text-sm md:text-base hover:bg-emerald-600 w-full text-white uppercase font-semibold py-2 px-4 rounded-xl transition-all">
                 Scheda Technica
                 </button>
-                <button className=" bg-emerald-900 text-sm md:text-base hover:bg-emerald-950 w-full text-white uppercase font-semibold py-2 px-4 rounded-xl transition-all">
+                <Link to={'/confronto'} className=" text-center bg-emerald-900 text-sm md:text-base hover:bg-emerald-950 w-full text-white uppercase font-semibold py-2 px-4 rounded-xl transition-all">
                 Compara
-                </button>
+                </Link>
             </div>
           </div>
         </div>
-        
       </div>
     </div>
   );

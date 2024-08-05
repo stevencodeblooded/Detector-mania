@@ -8,7 +8,7 @@ const ProductHeader = () => {
             <h1 className="text-3xl md:text-5xl font-bold mb-3">Nokta FIndX</h1>
             <p className="text-lg font-semibold text-gray-400">Scheda Tecnica</p>
         </div>
-        <div className="flex items-center bg-emerald-100 rounded-full px-4 py-2 shadow-md w-full max-w-md">
+        <div className="hidden md:flex items-center bg-emerald-100 rounded-full px-4 py-2 shadow-md w-full max-w-md">
             <input
               type="text"
               placeholder="Cerca un modello di device..."

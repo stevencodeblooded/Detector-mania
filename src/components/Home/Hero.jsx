@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 md:flex-row gap-5">
             <div className=" md:col-span-2">
                 <Link to={''} className='relative text-white group'>
-                    <div className='relative overflow-hidden rounded-2xl'>
+                    <div className='relative rounded-2xl'>
                         <img src={article} alt="" className='w-full h-full object-cover rounded-2xl' />
                         <div className='absolute inset-0 bg-gradient-to-t from-[rgba(4,120,87,0.7)] via-[rgba(4,120,87,0.7)] to-transparent transition-all duration-500 ease-in-out group-hover:from-[rgba(4,120,87,0.8)] group-hover:via-[rgba(4,120,87,0.8)]'></div>
                         <div className='flex flex-col gap-3 w-2/3 absolute bottom-7 lg:bottom-14 left-7 lg:left-14 z-10'>
@@ -22,7 +22,7 @@ const Hero = () => {
             </div>
             <div className=" md:col-span-1 flex flex-col gap-5">
                 <Link to={''} className='relative text-white group'>
-                    <div className='relative overflow-hidden rounded-2xl'>
+                    <div className='relative rounded-2xl'>
                         <img src={article} alt="" className='w-full h-full object-cover rounded-2xl' />
                         <div className='absolute inset-0 bg-gradient-to-t from-[rgba(4,120,87,0.7)] via-[rgba(4,120,87,0.7)] to-transparent transition-all duration-500 ease-in-out group-hover:from-[rgba(4,120,87,0.8)] group-hover:via-[rgba(4,120,87,0.8)]'></div>
                         <div  className='flex flex-col gap-2 lg:gap-3 w-2/3 absolute bottom-7 lg:bott0 left-7 z-10'>
@@ -35,7 +35,7 @@ const Hero = () => {
                     </div>
                 </Link>
                 <Link to={''} className='relative text-white group'>
-                    <div className='relative overflow-hidden rounded-2xl'>
+                    <div className='relative rounded-2xl'>
                         <img src={article} alt="" className='w-full h-full object-cover rounded-2xl' />
                         <div className='absolute inset-0 bg-gradient-to-t from-[rgba(4,120,87,0.7)] via-[rgba(4,120,87,0.7)] to-transparent transition-all duration-500 ease-in-out group-hover:from-[rgba(4,120,87,0.8)] group-hover:via-[rgba(4,120,87,0.8)]'></div>
                         <div  className='flex flex-col gap-2 lg:gap-3 w-2/3 absolute bottom-7 lg:bott0 left-7 z-10'>

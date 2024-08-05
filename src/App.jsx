@@ -4,6 +4,7 @@ import HomeScreen from "./container/HomeScreen"
 import NewsScreen from "./container/NewsScreen"
 import SchedeScreen from "./container/SchedeScreen"
 import ProductDetailsScreen from "./container/ProductDetailsScreen"
+import ConfrontoScreen from "./container/ConfrontoScreen"
 
 const App = () => {
   const router = createBrowserRouter(
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="news" element={<NewsScreen />} />
         <Route path='schede' element={<SchedeScreen />} />
         <Route path='details/:id' element={<ProductDetailsScreen />} />
+        <Route path="confronto" element={<ConfrontoScreen />} />
       </Route>
     )
   )

@@ -25,7 +25,7 @@ const Navigation = () => {
   return (
     <div className={`relative w-full ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'} transition-colors duration-300`}>
       <div className="bg-emerald-700 py-2 "></div>
-      <div className='max-w-7xl mx-auto px-2 py-10 flex items-center justify-between relative'>
+      <div className='max-w-7xl mx-auto px-6 py-10 flex items-center justify-between relative'>
         <Link to={'/'} >
           <img src={logo} alt="Detector Mania" className='w-44 md:w-56'/>
         </Link>
@@ -100,7 +100,7 @@ const Navigation = () => {
             className='fixed inset-0 bg-black opacity-50'
             onClick={hideMobileLinks}
           ></div>
-          <div className={`absolute top-0 right-0 w-3/4 md:w-1/2 lg:w-1/3 h-full p-5 shadow-lg transform transition-transform duration-300 ease-in-out translate-x-0 ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}`}>
+          <div className={`absolute top-0 right-0 w-full sm:w-3/4 md:w-1/2 lg:w-1/3 h-full p-5 shadow-lg transform transition-transform duration-300 ease-in-out translate-x-0 ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}`}>
             <h4 className='text-3xl absolute top-12 right-12 cursor-pointer' onClick={hideMobileLinks}><FontAwesomeIcon icon={faX} /></h4>
             <ul className='flex flex-col px-6 text-xl mt-32 gap-3 uppercase font-semibold '>
               <li><NavLink onClick={hideMobileLinks} to={'/'} className={({ isActive }) => isActive ? 'text-emerald-600' : 'hover:text-emerald-600 transition-all'}>Home</NavLink></li>

@@ -14,24 +14,27 @@ const SliderComponent = () => {
         slidesToScroll: 3,
         arrows: false,
         responsive: [
-          {
-            breakpoint: 1280,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              infinite: true,
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                },
             },
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    centerMode: false,  // Disable centering
+                    centerPadding: '0px', // Disable padding on both sides
+                    variableWidth: true, // Enable custom width
+                },
             },
-          },
-          
         ],
-      };
+    };
 
     const next = () => {
         sliderRef.current.slickNext();
@@ -42,37 +45,41 @@ const SliderComponent = () => {
     };
 
     return (
-        <div className='container mx-auto py-8'>
-            <div className='flex flex-col lg:flex-row items-start justify-between lg:items-center'>
+        <div className="container mx-auto py-8">
+            <div className="flex flex-col lg:flex-row items-start justify-between lg:items-center">
                 <h2 className="text-3xl md:text-5xl font-bold text-green-700">Recensioni</h2>
-                <div className='flex items-center self-end'>
-                    <p className='text-green-700 font-bold mr-4 uppercase text-xl'>Tutte le Recensioni</p>
+                <div className="flex items-center self-end">
+                    <p className="text-green-700 font-bold mr-4 uppercase text-xl">Tutte le Recensioni</p>
                     <button
                         onClick={prev}
-                        className='mx-2 bg-emerald-600 text-white text-lg py-2 px-4 rounded-md'
+                        className="mx-2 bg-emerald-600 text-white text-lg py-2 px-4 rounded-md"
                     >
                         <FontAwesomeIcon icon={faChevronLeft} />
                     </button>
                     <button
                         onClick={next}
-                        className='mx-2 bg-emerald-600 text-white text-lg py-2 px-4 rounded-md'
+                        className="mx-2 bg-emerald-600 text-white text-lg py-2 px-4 rounded-md"
                     >
-                       <FontAwesomeIcon icon={faChevronRight} />
+                        <FontAwesomeIcon icon={faChevronRight} />
                     </button>
                 </div>
             </div>
-            <Slider ref={sliderRef} {...settings} className='pt-12'>
+            <Slider ref={sliderRef} {...settings} className="pt-12">
                 {[1, 2, 3, 4, 5].map((item) => (
-                    <div key={item} className='px-2'>
-                        <div className='bg-white rounded-xl shadow-lg overflow-hidden'>
+                    <div
+                        key={item}
+                        className="px-2"
+                        style={{ width: 'calc(100vw - 180px)' }} // Full width minus a portion for the next slide
+                    >
+                        <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                             <img
                                 src={`https://via.placeholder.com/300x400?text=Image+${item}`}
                                 alt={`Placeholder ${item}`}
-                                className='w-full h-64 object-cover'
+                                className="w-full h-64 object-cover"
                             />
-                            <div className='p-4 bg-gray-900 bg-opacity-50'>
-                                <h3 className='text-white font-bold text-2xl mb-2'>Nokta Makro The Legend</h3>
-                                <p className='text-white font-extralight'>Recensioni</p>
+                            <div className="p-4 bg-gray-900 bg-opacity-50">
+                                <h3 className="text-white font-bold text-2xl mb-2">Nokta Makro The Legend</h3>
+                                <p className="text-white font-extralight">Recensioni</p>
                             </div>
                         </div>
                     </div>

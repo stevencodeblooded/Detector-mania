@@ -13,14 +13,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import article from "../../assets/img_article_1.png";
 import { Link } from "react-router-dom";
 import ads from '../../assets/ads.jpeg'
-import { useTheme } from '../../shared/ThemeContext'; // Adjust path as necessary
 
 const StickyRightSide = () => {
-  const { darkMode } = useTheme();
 
   return (
-    <div className={`${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'} transition-colors duration-300`}>
-      <div className="sticky top-0  z-10 p-4 mb-20">
+      <div className="sticky top-5 z-10 mb-20 px-6 md:px-0">
         <div className="h-64 border w-full">
           <img
             src={ads}
@@ -233,7 +230,6 @@ const StickyRightSide = () => {
           </a>
         </div>
       </div>
-    </div>
   );
 };
 

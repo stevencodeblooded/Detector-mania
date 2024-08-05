@@ -8,7 +8,7 @@ const Footer = () => {
   const year = date.getFullYear()
   return (
     <div>
-      <div className="bg-emerald-700 py-8 px-2 text-white">
+      <div className="bg-emerald-700 py-8 px-6 text-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 gap-10 lg:gap-20 sm:grid-cols-2 md:grid-cols-3">
           <div className="lg:w-4/5">
             <img src={logo} alt="Detector Mania" className="mb-3"/>
