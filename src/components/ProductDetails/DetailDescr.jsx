@@ -11,14 +11,14 @@ const DetailDescr = () => {
   return (
     <div className="flex flex-col md:flex-row">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full md:w-2/3">
-        <div className="md:col-span-1 px-3 pb-10 bg-white rounded-xl shadow-lg overflow-hidden border-4 border-emerald-300 h-fit hover:border-emerald-400 transition-all">
+        <div className="md:col-span-1 px-3 pb-10 rounded-xl shadow-lg overflow-hidden border-4 border-emerald-300 h-fit hover:border-emerald-400 transition-all">
           <img
             src={item}
             alt={"item"}
             className=" w-14 md:w-32 my-6 mx-auto object-cover"
           />
           <div className="flex flex-col items-start gap-1">
-            <h3 className="text-black font-bold text-2xl">Miglior prezzo</h3>
+            <h3 className="font-bold text-2xl">Miglior prezzo</h3>
             <p className=" text-2xl font-bold text-red-600">
               179,90 <FontAwesomeIcon icon={faEuroSign} />
             </p>
@@ -34,28 +34,28 @@ const DetailDescr = () => {
         <div className="md:col-span-2">
           <div></div>
           <div className=" space-y-3">
-            <p className="font-semibold text-lg text-gray-500">
+            <p className="font-semibold text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
               ratione inventore optio commodi similique consequatur labore
               necessitatibus, maxime porro delectus iusto. Odit explicabo
               numquam iste unde sed enim eos non, quis est nostrum consectetur
               quam sapiente, voluptatibus, magni ducimus reiciendis?
             </p>
-            <p className="font-semibold text-lg text-gray-500">
+            <p className="font-semibold text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
               ratione inventore optio commodi similique consequatur labore
               necessitatibus, maxime porro delectus iusto. Odit explicabo
               numquam iste unde sed enim eos non, quis est nostrum consectetur
               quam sapiente, voluptatibus, magni ducimus reiciendis?
             </p>
-            <p className="font-semibold text-lg text-gray-500">
+            <p className="font-semibold text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
               ratione inventore optio commodi similique consequatur labore
               necessitatibus, maxime porro delectus iusto. Odit explicabo
               numquam iste unde sed enim eos non, quis est nostrum consectetur
               quam sapiente, voluptatibus, magni ducimus reiciendis?
             </p>
-            <p className="font-semibold text-lg text-gray-500">
+            <p className="font-semibold text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
               ratione inventore optio commodi similique consequatur labore
               necessitatibus, maxime porro delectus iusto. Odit explicabo

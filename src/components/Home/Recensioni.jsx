@@ -8,7 +8,7 @@ import StickyRightSide from "./StickyRightSide";
 
 const Recensioni = () => {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto" id='recension'>
       <div>
         <div className="flex flex-col md:flex-row">
           {/* Main content on the left */}

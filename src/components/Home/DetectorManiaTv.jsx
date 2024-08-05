@@ -19,7 +19,7 @@ const DetectorManiaTv = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
-    arrows: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 780,
