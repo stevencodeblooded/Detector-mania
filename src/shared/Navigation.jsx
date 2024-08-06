@@ -71,7 +71,7 @@ const Navigation = () => {
               </div>
             )}
           </div>
-          {/* <div className={`absolute top-0 right-0 flex items-center transition-transform duration-300 ease-in-out ${searchVisible ? 'translate-x-0' : 'translate-x-full'}`}>
+          <div className={`absolute -top-1 right-0 ml-5 flex items-center transition-transform duration-300 ease-in-out ${searchVisible ? 'translate-x-0' : 'translate-x-full'}`}>
             <FontAwesomeIcon
               icon={faMagnifyingGlass}
               className='bg-emerald-700 text-white p-2 rounded-md cursor-pointer'
@@ -90,7 +90,7 @@ const Navigation = () => {
             >
               <FontAwesomeIcon icon={faX} />
             </button>
-          </div> */}
+          </div>
           <IoGridOutline className='bg-emerald-700 text-white p-2 text-4xl rounded-md cursor-pointer' onClick={showMobileLinks} />
         </div>
       </div>
